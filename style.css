@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Overall form styling */
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #FFF7E6;
+    font-family: Arial, sans-serif;
+    border: 1px solid /*#ddd*/ black  ;
+    padding: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+form h1 {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+form h2 {
+    color: #e74c3c;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+}
+
+/* Input field styling */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    width: calc(50% - 10px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Two-column layout for fields */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group .field {
+    width: 48%;
+}
+
+/* Radio button styling */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin: 0;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Contact details section styling */
+.contact-details {
+    margin-top: 20px;
+}
+
+
+
+/* Footer text styling */
+footer {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+ /* Submit button styling */
+.submit-button {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
+.submit-button:active {
+    background-color: #a93226; /* Even darker shade on click */
+}
+
+@media (max-width: 668px) {
+    form {
+        width: 90%; /* Form takes up 90% of viewport width */
+        padding: 5%;
+    }
+
+    .form-group {
+        flex-direction: column;
+        margin:  20px 0 ;        
+    }
+
+    .form-group .field {
+        width: 100%;
+    }
+
+    .submit-button {
+        width: 100%; 
+    }
+}
+
+/* Additional adjustments for screens 480px and below (small mobile screens) */
+@media (max-width: 480px) {
+    form {
+        width: 100%; /* Form takes up full viewport width */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size for header */
+    }
+
+    h2 {
+        font-size: 16px; /* Smaller font size for section titles */
+    }
+
+    .submit-button {
+        font-size: 14px; /* Slightly smaller font size for button */
+        padding: 10px;
+    }
+}
