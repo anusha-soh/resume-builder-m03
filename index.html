@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+    <form id="resume-form">
         <h1>REGISTRATION FORM</h1>
         
         
@@ -15,22 +15,22 @@
         <div class="form-group">
             <div class="field">
                 <label for="name">Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" placeholder="Your name here" required>
             </div>
             <div class="field">
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname">
+                <label for="profession">profession</label>
+                <input type="text" id="profession" placeholder=" your profession here" required>
             </div>
         </div>
         
         <div class="form-group">
             <div class="field">
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="email" placeholder="your E-mail here " required>
             </div>
             <div class="field">
                 <label for="tel">Phone Number</label>
-                <input type="tel" id="tel">
+                <input type="tel" id="tel" placeholder="Your Phone number here" required>
             </div>
         </div>
     
@@ -42,22 +42,22 @@
      -->
         <!-- More fields here for date of birth, nationality, etc. -->
     
-        <h2>CONTACT DETAILS</h2>
+        <h2>Socials</h2>
         <div class="form-group">
             <div class="field">
-                <label for="city">City</label>
-                <input type="text" id="city">
+                <label for="linkedin">Linkedin</label>
+                <input type="text" id="linkedin" required>
             </div>
             <div class="field">
-                <label for="state">State</label>
-                <input type="text" id="state">
+                <label for="facebook">Facebook</label>
+                <input type="text" id="facebook" required>
             </div>
         </div>
     
         <!-- More fields for contact details -->
     
         <footer>
-            <p>Click on submit to generate your resume</p>
+            <p>Click on "submit" to generate your resume</p>
         </footer>
     
         <div>
@@ -65,6 +65,12 @@
 
         </div>
     </form>
+
+    <!-- Generated resume -->
+
+    <section id="generated-resume"> 
+        <script src="script.js"></script>
+    </section>
     
 </body>
 </html>
