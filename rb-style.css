@@ -1,12 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-li{
-    font-size: xx-large;
-    color: #a93226;
-}
 
 /* Overall form styling */
 form {
@@ -50,7 +47,7 @@ form input[type="date"],
 form input[type="email"],
 form input[type="tel"],
 form select {
-    width: 90%;
+    width: 98%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -59,7 +56,7 @@ form select {
 }
 
 form textarea {
-    width: calc(100% - 10px); /* Two-column layout with spacing */
+    width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -80,24 +77,9 @@ form textarea {
 
 .form-group .text-field {
     width: 100%;
-    
+
 }
 
-/* Radio button styling */
-.radio-group {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.radio-group label {
-    font-weight: normal;
-    margin: 0;
-}
-
-.radio-group input[type="radio"] {
-    margin-right: 5px;
-}
 
 /* Contact details section styling */
 .contact-details {
@@ -105,6 +87,30 @@ form textarea {
 }
 
 
+/* Submit button styling */
+.submit-button {
+   display: block;
+   width: 80%;
+   margin: 20px auto;
+   padding: 12px 20px;
+   background-color: #e74c3c;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   text-align: center;
+}
+
+.submit-button:hover {
+   background-color: #c0392b; /* Darker shade on hover */
+}
+
+.submit-button:active {
+   background-color: #a93226; /* Even darker shade on click */
+}
 
 /* Footer text styling */
 footer {
@@ -115,36 +121,15 @@ footer {
 }
 
 
- /* Submit button styling */
-.submit-button {
-    display: block;
-    width: 80%;
-    margin: 20px auto;
-    padding: 12px 20px;
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-}
-
-.submit-button:hover {
-    background-color: #c0392b; /* Darker shade on hover */
-}
-
-.submit-button:active {
-    background-color: #a93226; /* Even darker shade on click */
-}
 
 @media (max-width: 668px) {
     form {
-        width: 90%; /* Form takes up 90% of viewport width */
+        width: 90%; 
         padding: 5%;
     }
+
+
+
 
     .form-group {
         flex-direction: column;
@@ -160,23 +145,22 @@ footer {
     }
 }
 
-/* Additional adjustments for screens 480px and below (small mobile screens) */
 @media (max-width: 480px) {
     form {
-        width: 100%; /* Form takes up full viewport width */
+        width: 100%; 
         padding: 10px;
     }
 
-    h1 {
-        font-size: 20px; /* Smaller font size for header */
+    form h1 {
+        font-size: 20px; 
     }
 
-    h2 {
-        font-size: 16px; /* Smaller font size for section titles */
+    form h2 {
+        font-size: 16px; 
     }
 
     .submit-button {
-        font-size: 14px; /* Slightly smaller font size for button */
+        font-size: 14px;
         padding: 10px;
     }
 }

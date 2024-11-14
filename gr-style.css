@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.res-main{
+    font-family: Arial;
+    line-height: 1.7;
+    color: #333333;
+    max-width: 800px;
+    padding:50px 40px;
+    margin: 0 auto;
+    box-shadow: #2E8B57 2px 2px 20px;
+}
+.resh1 {
+    color: #2E8B57;
+    line-height: 1;
+    font-size: 2.6rem;
+}
+.resh2 {
+    color: #2E8B57;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resh3 {
+    color: #2E8B57;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.obj {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.exp-item {
+    margin-bottom: 15px;
+}
+.exp-date {
+    font-weight: bold;
+}
+.contact {
+    margin-top: 20px;
+}
+.contact p {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .res-body {
+        padding: 10px;
+    }
+    .resh1 {
+        font-size: 2rem;
+    }
+    .resh2 {
+        font-size: 1rem;
+    }
+    .resh3 {
+        font-size: 1.3rem;
+    }
+}
