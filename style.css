@@ -11,6 +11,11 @@
     margin: 0 auto;
     box-shadow: #2E8B57 2px 2px 20px;
 }
+
+.res-main i{
+    padding-right: 5px;
+}
+
 .resh1 {
     color: #2E8B57;
     line-height: 1;
