@@ -50,12 +50,22 @@ form input[type="date"],
 form input[type="email"],
 form input[type="tel"],
 form select {
-    width: calc(50% - 10px);
+    width: 90%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+}
+
+form textarea {
+    width: calc(100% - 10px); /* Two-column layout with spacing */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
 }
 
 /* Two-column layout for fields */
@@ -66,6 +76,11 @@ form select {
 
 .form-group .field {
     width: 48%;
+}
+
+.form-group .text-field {
+    width: 100%;
+    
 }
 
 /* Radio button styling */
